@@ -5,7 +5,7 @@
 	
 			If($handle = ftp_connect("ftp.lg-server.de")){
 			ftp_login($handle, "packages", "packages");
-			ftp_get($handle, $package . "_update.zip", "update.zip", FTP_BINARY);}else{echo "Error! Please report this bug under bugs.lg-server.de!";}
+			ftp_get($handle, $package . "_update.zip", "update.zip", FTP_BINARY);}else{echo "Error! Please report this bug on bugs.lg-server.de!";}
 	
 		//Unzip
 	
