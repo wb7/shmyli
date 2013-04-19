@@ -1,7 +1,7 @@
 <?php
 
 /*
-If you want to upgrade urlShortener, simply call this script. But rename it after upgrade to update.txt!
+If you want to upgrade urlShortener, simply call this script. But set the chmod after upgrade to 400!
 */
 
 include('./updater/updater.php');
