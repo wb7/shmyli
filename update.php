@@ -8,6 +8,6 @@ If you want to upgrade urlShortener, simply call this script. But rename it afte
 
 include('./updater/updater.php');
 
-checkUpdates("urlShortener");
+	checkUpdates("urlShortener");
 
 ?>
