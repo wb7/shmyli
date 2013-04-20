@@ -14,10 +14,10 @@
 			
 			}
 			
-		}else{echo "{404}";}
+		}else{include('404.php');}
 
 		$result->close();
 		$db->close();
 		
-	}else{echo "{HOMEPAGE}";}
+	}else{include('home.php');}
 ?>
