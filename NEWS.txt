@@ -10,3 +10,6 @@ geht es vorwärts. Nach diversen anderen Projekten gehts dann hier weiter.
 Der Spaß mit den Nullcommits ging weiter, ich habe den Fehler jetzt lokalisiert.
 Die E-Mailfunktion ist schuld.
 -lucas
+
+- 20.04.2013 -
+Versehentlich Commit dem falschen Ticket zugeordnet.
