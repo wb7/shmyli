@@ -1,12 +1,23 @@
 <?php
 
-include('conf.inc.php');
+	If ($_GET['short'] != ""){
 
-	$result = mysql_query("SELECT * FROM links WHERE short = '" . mysql_real_escape_string($_GET['url']) . "';");
-	If (mysql_num_rows($result) != 0){
-		while($row = mysql_fetch_object($result))
-		{
-		  header("Location: " . $row->url);
-		}
-	}else{echo "Not found";}
+		include('inc/sql.php');
+	
+		$result = $db->query("SELECT * FROM `links` WHERE `short` = '" . mysqli_real_escape_string($db, $_GET['short']) . "';");
+		
+		If ($result->num_rows > 0){
+		
+			while ($row = $result->fetch_object()){
+			
+				header("Location: " . $row->url);
+			
+			}
+			
+		}else{echo "{404}";}
+
+		$result->close();
+		$db->close();
+		
+	}else{echo "{HOMEPAGE}";}
 ?>
