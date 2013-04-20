@@ -13,3 +13,6 @@ Die E-Mailfunktion ist schuld.
 
 - 20.04.2013 -
 Versehentlich Commit dem falschen Ticket zugeordnet.
+
+- 20.04.2013 -
+Achtung: Headerrückgabe funktioniert derzeit nur ohne FastCGI!
