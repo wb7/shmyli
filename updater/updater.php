@@ -1,5 +1,4 @@
 <?php
-
 	function checkUpdates($package){
 	
 		//Get file
