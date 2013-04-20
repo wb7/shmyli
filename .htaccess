@@ -2,3 +2,11 @@
 #RewriteBase /
 #RewriteCond %{REQUEST_URI} !=/index.php
 #RewriteRule ^(.*) /index.php?short=$1 [L,PT]
+
+<Files 404.php>
+deny from all
+</Files>
+
+<Files home.php>
+deny from all
+</Files>
