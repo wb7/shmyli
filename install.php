@@ -3,7 +3,9 @@ error_reporting(0);
 If ($_POST['host'] AND $_POST['user'] AND $_POST['password'] AND $_POST['database']){
 
 	//WRITE
-		If(file_exists("inc/conf.inc.php")){unlink("inc/conf.inc.php");}
+		If(file_exists("inc/conf.inc.php")){
+			unlink("inc/conf.inc.php");
+		}
 		$file = fopen("inc/conf.inc.php", "a");
 		fwrite($file, "<?php\n\$dbhost = \"" . $_POST['host'] . "\";\n\$dbuser = \"" . $_POST['user'] . "\";\n\$dbpw = \"" . $_POST['password'] . "\";\n\$db = \"" . $_POST['database'] . "\";\n?>");
 		fclose($file);
