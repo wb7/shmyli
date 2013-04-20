@@ -12,3 +12,4 @@ If ($_POST['host'] AND $_POST['user'] AND $_POST['password'] AND $_POST['databas
 	<input type="text" name="user" placeholder="User">
 	<input type="password" name="password" placeholder="Password">
 	<input type="text" name="database" placeholder="Database">
+</form>
