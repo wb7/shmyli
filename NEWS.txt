@@ -5,3 +5,8 @@ Es tut mir leid, dass es heute diverse "sinnlose" Commits gab, oder ich
 nenne sie immer "Nullcommits", aber jetzt läuft der Bugtracker. Ab jetzt
 geht es vorwärts. Nach diversen anderen Projekten gehts dann hier weiter.
 -lucas
+
+- 20.04.2013 -
+Der Spaß mit den Nullcommits ging weiter, ich habe den Fehler jetzt lokalisiert.
+Die E-Mailfunktion ist schuld.
+-lucas
