@@ -1,10 +1,10 @@
 <?php
 
-	function checkUpdates($package){
+	function checkUpdates($package, $mirror="ftp.lg-server.de"){
 	
 		//Get file
 	
-			If($handle = ftp_connect("ftp.lg-server.de")){
+			If($handle = ftp_connect($mirror)){
 			ftp_login($handle, "packages", "packages");
 			ftp_get($handle, $package . "_update.zip", "update.zip", FTP_BINARY);}else{echo "Error! Please report this bug on bugs.lg-server.de!";}
 	
