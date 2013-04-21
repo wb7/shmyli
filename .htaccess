@@ -1,6 +1,9 @@
 #If you are using urlShortener in the root directory
 #of a domain, uncomment to following lines!
 
+#You need an Apache-Webserver and mod_rewrite, otherwise
+#you will get an error!
+
 #RewriteEngine On
 #RewriteBase /
 #RewriteCond %{REQUEST_URI} !=/index.php
