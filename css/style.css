@@ -40,6 +40,8 @@ body{
 
 }
 
+
+
 /*Browser*/
 @media (min-width: 950px) {
 /* /////////////////////////////////////// CSS NAV HEADER //////////////////////////////////// */
@@ -166,6 +168,22 @@ body{
 		
 }
 
+#headline{
+		position: relative;
+		font-family:blanchcaps;
+		background-color: #e0dfdf;
+		margin: 0 auto;
+		width:500px;
+		height:43px;
+		padding-top:4px;
+		padding-bottom:4px;
+		padding-left:2px;
+		padding-right:2px;
+		top:410px;
+		text-align:center;
+		
+}
+
 /* Text input */
 
 input[type="text"]{
@@ -238,9 +256,15 @@ input[type="text"]:focus
 
 .block-text {
 
-		height: 200px;
 		width: 190px;
+		background-color: yellow;
 
+}
+
+.info-text {
+
+		width: 600px;
+		background: #E6E6E6;
 }
 
 /* Info "Halter" */
@@ -253,6 +277,7 @@ input[type="text"]:focus
 		top: 100px;
 		text-align: center;
 		background: #E6E6E6;
+		opacity: 0.9;
 }
 
 /* Text */
@@ -394,6 +419,22 @@ input[type="text"]:focus
 		
 }
 
+#headline{
+		position: relative;
+		font-family:blanchcaps;
+		background-color: #e0dfdf;
+		margin: 0 auto;
+		width:500px;
+		height:43px;
+		padding-top:4px;
+		padding-bottom:4px;
+		padding-left:2px;
+		padding-right:2px;
+		top:410px;
+		text-align:center;
+		
+}
+
 /* Text input */
 
 input[type="text"]{
@@ -473,6 +514,12 @@ input[type="text"]:focus
 		top:500px;
 }
 
+.info-text {
+
+		width: 540px;
+		background: #E6E6E6;
+}
+
 /* Info "Halter" */
 
 .hold-info {
@@ -482,7 +529,9 @@ input[type="text"]:focus
 		width: 100%;
 		top: 100px;
 		text-align: center;
-		background: white;
+		background: #E6E6E6;
+		opacity: 0.9;
+		padding-bottom: 20px;
 }
 
 /* Text */
@@ -623,6 +672,22 @@ input[type="text"]:focus
 		
 }
 
+#headline{
+		position: relative;
+		font-family:blanchcaps;
+		background-color: #e0dfdf;
+		margin: 0 auto;
+		width:90%;
+		height:83px;
+		padding-top:4px;
+		padding-bottom:4px;
+		padding-left:2px;
+		padding-right:2px;
+		top:410px;
+		text-align:center;
+		
+}
+
 /* Text input */
 
 input[type="text"]{
@@ -696,6 +761,12 @@ input[type="text"]:focus
 		margin: 0 auto;
 }
 
+.info-text {
+		margin: 0 auto;
+		width: 250px;
+		background: #E6E6E6;
+}
+
 /* Info "Halter" */
 
 .hold-info {
@@ -703,9 +774,10 @@ input[type="text"]:focus
 		z-index: 500;
 		margin: auto;
 		width: 100%;
-		top: 122px;
+		top: 150px;
 		text-align: center;
-		background: white;
+		background: #E6E6E6;
+		padding-bottom: 60px;
 }
 
 /* Text */
