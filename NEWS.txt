@@ -21,3 +21,11 @@ Es tut mir leid, dass es heute diverse "sinnlose" Commits gab, oder ich
 nenne sie immer "Nullcommits", aber jetzt läuft der Bugtracker. Ab jetzt
 geht es vorwärts. Nach diversen anderen Projekten gehts dann hier weiter.
 -lucas
+
+TODO:
+
+-404-Bild
+-Texte schreiben
+-Formatierung Rückgabe der URL
+-Rückgabe der URL
+-Content-Seiten
