@@ -16,10 +16,9 @@
 				<li class="has-flyout">
 					<a href="index.php"><img src="img/grid-menu.png"></a>
 					<ul class="flyout">
-						<li><a href="#">What?</a></li>
-						<li><a href="#">Who?</a></li>
-						<li><a href="#">Why?</a></li>
-						
+						<li><a href="what.php">What?</a></li>
+						<li><a href="who.php">Who?</a></li>
+						<li><a href="why.php">Why?</a></li>
 					</ul>
 				</li>
 			</ul>
