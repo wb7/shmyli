@@ -437,6 +437,10 @@ input[type="text"]:focus
 		
 }
 
+#headline h1{
+		margin-top: 0px;
+}
+
 /* Text input */
 
 input[type="text"]{
@@ -688,6 +692,10 @@ input[type="text"]:focus
 		top:410px;
 		text-align:center;
 		
+}
+
+#headline h1{
+		margin-top: 20px;
 }
 
 /* Text input */
