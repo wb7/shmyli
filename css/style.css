@@ -181,7 +181,10 @@ body{
 		padding-right:2px;
 		top:410px;
 		text-align:center;
-		
+}
+
+#headline h1{
+		margin-top: 0px;
 }
 
 /* Text input */
@@ -257,7 +260,6 @@ input[type="text"]:focus
 .block-text {
 
 		width: 190px;
-		background-color: yellow;
 
 }
 
@@ -516,7 +518,7 @@ input[type="text"]:focus
 
 .info-text {
 
-		width: 540px;
+		width: 510px;
 		background: #E6E6E6;
 }
 

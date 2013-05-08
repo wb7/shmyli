@@ -28,4 +28,3 @@ TODO:
 -Texte schreiben
 -Formatierung Rückgabe der URL
 -Rückgabe der URL
--Content-Seiten
