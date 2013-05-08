@@ -1,0 +1,738 @@
+/* /////////////////////////////////////// CSS Grundlagen //////////////////////////////////// */
+/* /////////////////////////////////////// CSS Grundlagen //////////////////////////////////// */
+
+/* Imports */
+
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700);
+
+/* Body */
+body{
+		height:100%;
+		margin:0px;
+		background: #FFF;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'blanchcaps';
+    src: url('../fonts/blanch_caps-webfont.eot');
+    src: url('../fonts/blanch_caps-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/blanch_caps-webfont.woff') format('woff'),
+         url('../fonts/blanch_caps-webfont.ttf') format('truetype'),
+         url('../fonts/blanch_caps-webfont.svg#blanchcaps') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'blanchcaps_light';
+    src: url('../fonts/blanch_caps_light-webfont.eot');
+    src: url('../fonts/blanch_caps_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/blanch_caps_light-webfont.woff') format('woff'),
+         url('../fonts/blanch_caps_light-webfont.ttf') format('truetype'),
+         url('../fonts/blanch_caps_light-webfont.svg#blanchcaps_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*Browser*/
+@media (min-width: 950px) {
+/* /////////////////////////////////////// CSS NAV HEADER //////////////////////////////////// */
+/* /////////////////////////////////////// CSS NAV HEADER //////////////////////////////////// */
+
+#block-nav {
+		position: relative;
+		height: 20px;
+		z-index: 500;
+}
+
+#block-nav ul {
+		list-style: none;
+}
+
+#menu-nav {
+		height :35px;
+		right: 0px;
+		top:40px;
+		margin-right: 2%;
+		text-align: left;
+}
+
+.flyout{
+
+		display: inline-block;
+		white-space: nowrap;
+		margin-top: 0px;
+		color:black;
+		padding-left: 0px;
+}
+
+.flyout li{
+		padding-left: 20px;
+}
+
+
+#block-nav li {
+		display: inline-block; 
+		color:black;
+		margin-top: 0px;
+		list-style: none;
+		
+		font-family:"Blanchcaps",Georgia, Arial, serif;
+		font-weight: normal;
+		font-size: 1.3em;
+		color:#000;
+
+}
+
+.flyout a{
+	text-decoration: none;
+	color:black;
+}
+
+
+.flyout a:hover{
+	opacity: 0.6;
+}
+
+
+
+.has-flyout{
+		margin-right: 3%;
+}
+
+.has-flyout img:hover{
+		cursor: pointer;
+}
+
+
+/* /////////////////////////////////////// CSS Inhalt //////////////////////////////////// */
+/* /////////////////////////////////////// CSS Inhalt //////////////////////////////////// */
+
+/* Fixed Top */
+
+#fix-top{
+		width: 100%;
+		height: 2px;
+		background-color: white;
+		opacity: 0;
+}
+
+/* Oberer DivContainer */
+
+#theDiv{
+    width:100%; 
+    color:#252525;
+    height: 400px;
+}
+
+/* Logo*/
+
+#logo{
+		position: fixed;
+		padding-top: 94px;
+		width: 100%;
+  min-width:30%;
+		text-align: center;
+		z-index: 0;
+}
+
+
+/* wrapper */
+
+#wrapper{
+		min-width:30%;
+}
+
+/* Div Container */
+#container{
+		position: relative;
+		font-family:blanchcaps_light;
+		background-color: #e0dfdf;
+		margin: 0 auto;
+		width:500px;
+		height:43px;
+		padding-top:4px;
+		padding-bottom:4px;
+		padding-left:2px;
+		padding-right:2px;
+		top:410px;
+		text-align:center;
+		
+}
+
+/* Text input */
+
+input[type="text"]{
+    
+    padding: 5px;   
+    border: 1px solid #585858;
+
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+
+}
+input[type="text"]:hover
+{
+    border:1px solid #cccccc;
+}
+input[type="text"]:focus
+{
+    box-shadow:0 0 2px #FFFE00;
+}
+
+
+/* Button */
+
+.button-link {
+    padding: 10px 15px;
+    background: #848484;
+    color: #FFF;
+    
+    
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px #585858;
+    text-align:center;
+}
+.button-link:hover {
+    background: #6E6E6E;
+    border: solid 1px #585858;
+    text-decoration: none;
+}
+.button-link:active {
+    background: #2E5481;
+    border: solid 1px #203E5F;
+}
+
+/* Abgrenzung */
+
+#boundary{
+		background-color: #e0dfdf;
+		position:relative;
+		z-index: 100;
+		height:2px;
+		top:450px;
+}
+
+/* Inlinedings */
+
+.inline{
+	display: inline-block;
+}
+
+/* Info */
+
+.info{
+		padding: 3.5%;
+}
+
+/* Block - Text */
+
+.block-text {
+
+		height: 200px;
+		width: 190px;
+
+}
+
+/* Info "Halter" */
+
+.hold-info {
+		position: relative;
+		z-index: 500;
+		margin: auto;
+		width: 100%;
+		top: 100px;
+		text-align: center;
+		background: #E6E6E6;
+}
+
+/* Text */
+
+.text{
+		font-family:"Playfair Display",Georgia, Arial, serif;
+		font-weight: 400;
+		font-size: 0.9em;
+		color:#000;
+		text-align: left;
+		padding: 0%;
+		line-height: 24px;
+}
+}
+
+
+
+@media (max-width: 950px) {
+/* /////////////////////////////////////// CSS NAV HEADER //////////////////////////////////// */
+/* /////////////////////////////////////// CSS NAV HEADER //////////////////////////////////// */
+
+#block-nav {
+		position: relative;
+		height: 20px;
+		z-index: 500;
+}
+
+#block-nav ul {
+		list-style: none;
+}
+
+#menu-nav {
+		height :35px;
+		right: 0px;
+		top:40px;
+		margin-right: 2%;
+		text-align: left;
+}
+
+.flyout{
+
+		display: inline-block;
+		white-space: nowrap;
+		margin-top: 0px;
+		color:black;
+		padding-left: 0px;
+}
+
+.flyout li{
+		padding-left: 20px;
+}
+
+
+#block-nav li {
+		display: inline-block; 
+		color:black;
+		margin-top: 0px;
+		list-style: none;
+		
+		font-family:"Blanchcaps",Georgia, Arial, serif;
+		font-weight: normal;
+		font-size: 1.3em;
+		color:#000;
+
+}
+
+.flyout a{
+	text-decoration: none;
+	color:black;
+}
+
+
+.flyout a:hover{
+	opacity: 0.6;
+}
+
+
+
+.has-flyout{
+		margin-right: 3%;
+}
+
+.has-flyout img:hover{
+		cursor: pointer;
+}
+
+/* /////////////////////////////////////// CSS Inhalt //////////////////////////////////// */
+/* /////////////////////////////////////// CSS Inhalt //////////////////////////////////// */
+
+/* Fixed Top */
+
+#fix-top{
+		width: 100%;
+		height: 2px;
+		background-color: white;
+		opacity: 0;
+}
+
+/* Oberer DivContainer */
+
+#theDiv{
+    width:100%; 
+    color:#252525;
+    height: 400px;
+}
+
+/* Logo*/
+
+#logo{
+		position: fixed;
+		padding-top: 94px;
+		width: 100%;
+  min-width:30%;
+		text-align: center;
+		z-index: 0;
+}
+
+
+/* wrapper */
+
+#wrapper{
+		min-width:30%;
+}
+
+/* Div Container */
+#container{
+		position: relative;
+		font-family:blanchcaps_light;
+		background-color: #e0dfdf;
+		margin: 0 auto;
+		width:500px;
+		height:43px;
+		padding-top:4px;
+		padding-bottom:4px;
+		padding-left:2px;
+		padding-right:2px;
+		top:410px;
+		text-align:center;
+		
+}
+
+/* Text input */
+
+input[type="text"]{
+    
+    padding: 5px;   
+    border: 1px solid #585858;
+   
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+
+}
+input[type="text"]:hover
+{
+    border:1px solid #cccccc;
+}
+input[type="text"]:focus
+{
+    box-shadow:0 0 2px #FFFE00;
+}
+
+
+/* Button */
+
+.button-link {
+    padding: 10px 15px;
+    background: #848484;
+    color: #FFF;
+    
+    
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px #585858;
+    text-align:center;
+}
+.button-link:hover {
+    background: #6E6E6E;
+    border: solid 1px #585858;
+    text-decoration: none;
+}
+.button-link:active {
+    background: #2E5481;
+    border: solid 1px #203E5F;
+}
+
+/* Abgrenzung */
+
+#boundary{
+		background-color: #e0dfdf;
+		position:relative;
+		z-index: 100;
+		height:2px;
+		top:450px;
+}
+
+/* Inlinedings */
+
+.inline{
+	display: inline-block;
+}
+
+/* Info */
+
+.info{
+		/*padding: 3.5%;*/
+		vertical-align: bottom;
+}
+
+/* Block - Text */
+
+.block-text {
+
+		height: 200px;
+		width: 190px;
+		position:relativ;
+		top:500px;
+}
+
+/* Info "Halter" */
+
+.hold-info {
+		position: relative;
+		z-index: 500;
+		margin: auto;
+		width: 100%;
+		top: 100px;
+		text-align: center;
+		background: white;
+}
+
+/* Text */
+
+.text{
+		font-family:"Playfair Display",Georgia, Arial, serif;
+		font-weight: 400;
+		font-size: 0.9em;
+		color:#000;
+		text-align: left;
+		padding: 0%;
+		line-height: 24px;
+}
+}
+
+
+@media (max-width: 520px) {
+
+
+
+/* /////////////////////////////////////// CSS NAV HEADER //////////////////////////////////// */
+/* /////////////////////////////////////// CSS NAV HEADER //////////////////////////////////// */
+
+#block-nav {
+		position: relative;
+		height: 20px;
+		z-index: 500;
+}
+
+#block-nav ul {
+		list-style: none;
+		display: block;
+}
+
+#menu-nav {
+		height: 35px;
+		right: 0px;
+		top: 40px;
+		text-align: center;
+}
+
+.flyout{
+		margin-top: 0px;
+		color:black;
+		padding-left: 0px;
+}
+
+.flyout li{
+		padding-left: 20px;
+}
+
+
+#block-nav li {
+		color:black;
+		margin-top: 0px;
+		list-style: none;
+		
+		font-family:"Blanchcaps",Georgia, Arial, serif;
+		font-weight: normal;
+		font-size: 1.3em;
+		color:#000;
+
+}
+
+.flyout a{
+	text-decoration: none;
+	color:black;
+}
+
+
+.flyout a:hover{
+	opacity: 0.6;
+}
+
+
+
+.has-flyout{
+		margin-right: 3%;
+		text-align: center;
+		display: block;
+}
+
+.has-flyout img:hover{
+		cursor: pointer;
+}
+
+/* /////////////////////////////////////// CSS Inhalt //////////////////////////////////// */
+/* /////////////////////////////////////// CSS Inhalt //////////////////////////////////// */
+
+/* Fixed Top */
+
+#fix-top{
+		width: 100%;
+		height: 2px;
+		background-color: white;
+		opacity: 0;
+}
+
+/* Oberer DivContainer */
+
+#theDiv{
+    width:100%; 
+    color:#252525;
+    height: 400px;
+}
+
+/* Logo*/
+
+#logo{
+		position: absolute;
+		padding-top: 27%;
+		width: 100%;
+		min-width:30%;
+		text-align: center;
+		z-index: 0;
+}
+
+/* wrapper */
+
+#wrapper{
+		min-width:30%;
+}
+
+/* Div Container */
+#container{
+		position: relative;
+		font-family:blanchcaps_light;
+		background-color: #e0dfdf;
+		margin: 0 auto;
+		width:90%;
+		height:83px;
+		padding-top:4px;
+		padding-bottom:4px;
+		padding-left:2px;
+		padding-right:2px;
+		top: 410px;
+		text-align:center;
+		
+}
+
+/* Text input */
+
+input[type="text"]{
+    
+    padding: 5px;   
+    border: 1px solid #585858;
+
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+input[type="text"]:hover
+{
+    border:1px solid #cccccc;
+}
+input[type="text"]:focus
+{
+    box-shadow:0 0 2px #FFFE00;
+}
+
+
+/* Button */
+
+.button-link {
+    margin-top: 10px;
+    background: #848484;
+    color: #FFF;
+    
+    
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px #585858;
+    text-align:center;
+}
+.button-link:hover {
+    background: #6E6E6E;
+    border: solid 1px #585858;
+    text-decoration: none;
+}
+.button-link:active {
+    background: #2E5481;
+    border: solid 1px #203E5F;
+}
+
+/* Abgrenzung */
+
+#boundary{
+		display: none;
+}
+
+/* Inlinedings */
+
+.inline{
+	display: block;
+}
+
+/* Info */
+
+.info{
+		padding: 3.5%;
+		vertical-align: bottom;
+}
+
+/* Block - Text */
+
+.block-text {
+
+		height: 200px;
+		width: 190px;
+		margin: 0 auto;
+}
+
+/* Info "Halter" */
+
+.hold-info {
+		position: relative;
+		z-index: 500;
+		margin: auto;
+		width: 100%;
+		top: 122px;
+		text-align: center;
+		background: white;
+}
+
+/* Text */
+
+.text{
+		font-family:"Playfair Display",Georgia, Arial, serif;
+		font-weight: 400;
+		font-size: 0.9em;
+		color:#000;
+		text-align: center;
+		padding: 0%;
+		line-height: 24px;
+}
+}
+
+footer{
+
+		position: fixed;
+		bottom: 0px;
+		width: 100%;
+		background-color: #e0dfdf;
+		font-family:"Playfair Display",Georgia, Arial, serif;
+		font-weight: 400;
+		font-size: 0.8em;
+		color:#000;
+		text-align: center;
+		line-height: 24px;
+		z-index: 600;
+
+}

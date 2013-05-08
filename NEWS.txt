@@ -1,5 +1,10 @@
 Was so passiert, also eine Art Blog:
 
+- 08.08.2013 -
+Also, es geht dann mal weiter. Design ist fertig, hat aber
+noch ein paar Macken, insbesondere die mobile Ansicht.
+404-Bild muss noch nachgeschoben werden.
+
 - 20.04.2013 -
 Achtung: Headerrückgabe funktioniert derzeit nur ohne FastCGI!
 
