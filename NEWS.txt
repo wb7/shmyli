@@ -24,7 +24,6 @@ geht es vorwärts. Nach diversen anderen Projekten gehts dann hier weiter.
 
 TODO:
 
--404-Bild
 -Texte schreiben
 -Formatierung Rückgabe der URL
 -Rückgabe der URL

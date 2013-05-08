@@ -4,7 +4,7 @@ include('inc/sql.php');
 ?>
 <html>
 <head>
-	<title><?php $content->getString("page-title", $db);?> :: <?php $content->getString("404-title", $db);?></title>
+	<title><?php $content->getString("page-title", $db);?> :: <?php $content->getString("what-title", $db);?></title>
 	<link rel="stylesheet" href="css/style.css" />
 	<meta charset="utf-8">
 </head>
@@ -26,10 +26,10 @@ include('inc/sql.php');
 			</ul>
 		</div>
 		<div id="logo">
-			<a href="index.php"><img src="img/404.png" class="home" alt="404 :/"/></a>
+			<a href="index.php"><img src="img/what.png" class="home" alt="<?php $content->getString("what-title", $db);?>"/></a>
 		</div>
 <div id="headline">
-		<h1><b><?php $content->getString("404-title", $db);?></b></h1>
+		<h1><b><?php $content->getString("what-title", $db);?></b></h1>
 	</div> 
 	<div id="boundary"></div>
 </div>
@@ -38,7 +38,7 @@ include('inc/sql.php');
 	<div class="inline info"> 
 	<div class="info-text">
 	<p class="text">
-		<?php $content->getString("404-text", $db); ?>
+		<?php $content->getString("what-text", $db); ?>
 	</p>
 			</div>
 			</div>
