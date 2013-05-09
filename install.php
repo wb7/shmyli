@@ -17,7 +17,7 @@ If ($_POST['host'] AND $_POST['user'] AND $_POST['password'] AND $_POST['databas
 		$db->query("CREATE TABLE IF NOT EXISTS `links` (`id` int(11) NOT NULL AUTO_INCREMENT, `short` varchar(255) COLLATE utf8_unicode_ci NOT NULL, `url` text COLLATE utf8_unicode_ci NOT NULL, `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL, PRIMARY KEY (`id`)) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=2;");
 		$db->query("CREATE TABLE IF NOT EXISTS `content` (`id` int(11) NOT NULL AUTO_INCREMENT, `keyword` varchar(255) NOT NULL, `content` text NOT NULL,PRIMARY KEY (`id`)) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10;");
 		$db->query("INSERT INTO `links` (`id`, `short`, `url`, `title`) VALUES(1, 'wb7.eu', 'http://wb7.eu', 'WB7.eu');");
-		$db->query("INSERT INTO `content` (`id`, `keyword`, `content`) VALUES (1, 'page-title', 'urlShortener'), (2, '404-title', '404 - Not found :/'), (3, '404-text', 'Error 404 - not found! :('), (4, 'what-title', 'What!?'), (5, 'what-text', '[TEXT WHAT]'), (6, 'who-title', 'Who!?'), (7, 'who-text', '[TEXT WHO]'), (8, 'why-title', 'Why!?'), (9, 'why-text', '[TEXT WHY]');");
+		$db->query("INSERT INTO `content` (`id`, `keyword`, `content`) VALUES (1, 'page-title', 'wb7urlShortener'), (2, '404-title', '404 - Not found :/'), (3, '404-text', 'Error 404 - not found! :('), (4, 'what-title', 'What!?'), (5, 'what-text', '[TEXT WHAT]'), (6, 'who-title', 'Who!?'), (7, 'who-text', '[TEXT WHO]'), (8, 'why-title', 'Why!?'), (9, 'why-text', '[TEXT WHY]');");
 		
 }
 

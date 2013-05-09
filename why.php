@@ -18,9 +18,9 @@ include('inc/sql.php');
 				<li class="has-flyout">
 					<a href="index.php"><img src="img/grid-menu.png"></a>
 					<ul class="flyout">
-						<li><a href="what.php">What?</a></li>
-						<li><a href="who.php">Who?</a></li>
-						<li><a href="why.php">Why?</a></li>
+						<li><a href="what.php"><?php $content->getString("what-title", $db);?></a></li>
+						<li><a href="who.php"><?php $content->getString("who-title", $db);?></a></li>
+						<li><a href="why.php"><?php $content->getString("why-title", $db);?></a></li>
 					</ul>
 				</li>
 			</ul>

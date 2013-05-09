@@ -1,6 +1,10 @@
+<?php
+include('inc/content.class.php');
+include('inc/sql.php');
+?>
 <html>
 <head>
-	<title>urlShortener</title>
+	<title><?php $content->getString("page-title", $db);?></title>
 	<link rel="stylesheet" href="css/style.css" /> 
 	<meta charset="utf-8">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
@@ -16,15 +20,15 @@
 				<li class="has-flyout">
 					<a href="index.php"><img src="img/grid-menu.png"></a>
 					<ul class="flyout">
-						<li><a href="what.php">What?</a></li>
-						<li><a href="who.php">Who?</a></li>
-						<li><a href="why.php">Why?</a></li>
+						<li><a href="what.php"><?php $content->getString("what-title", $db);?></a></li>
+						<li><a href="who.php"><?php $content->getString("who-title", $db);?></a></li>
+						<li><a href="why.php"><?php $content->getString("why-title", $db);?></a></li>
 					</ul>
 				</li>
 			</ul>
 		</div>
 		<div id="logo">
-			<a href="#"> <img src="img/logo.png" class="home" alt="Logo urlShortener"/></a>
+			<a href="#"> <img src="img/logo.png" class="home" alt="Logo wb7urlShortener"/></a>
 		</div>
 <div id="container">
 		<form action="" method="post" id="form">
@@ -73,7 +77,7 @@
 				</div>
 			</div>
 <footer>
-<a href="IMPRESSUM HERE">Impressum</a> | Proudly powered by <a href="http://urlShortener.wb7.eu">urlShortener.wb7.eu</a> | <!-- DONT REMOVE THE FOLLOWING LINK!-->Impressed by <a href="http://www.thierryli.com/">www.thierryli.com</a> - Thanks :)
+<a href="IMPRESSUM HERE">Impressum</a> | Proudly powered by <a href="http://urlShortener.wb7.eu">wb7urlShortener</a> | <!-- DONT REMOVE THE FOLLOWING LINK!-->Impressed by <a href="http://www.thierryli.com/">www.thierryli.com</a> - Thanks :)
 </footer>	
 </body>
 </html>
