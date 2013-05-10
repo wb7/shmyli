@@ -25,6 +25,7 @@ include('inc/sql.php');
 				</li>
 			</ul>
 		</div>
+</div>
 		<div id="logo">
 			<a href="index.php"><img src="img/what.png" class="home" alt="<?php $content->getString("what-title", $db);?>"/></a>
 		</div>
@@ -32,7 +33,6 @@ include('inc/sql.php');
 		<h1><b><?php $content->getString("what-title", $db);?></b></h1>
 	</div> 
 	<div id="boundary"></div>
-</div>
 </div>
 	<div class="hold-info">
 	<div class="inline info"> 

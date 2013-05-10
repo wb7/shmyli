@@ -27,6 +27,7 @@ include('inc/sql.php');
 				</li>
 			</ul>
 		</div>
+</div>
 		<div id="logo">
 			<a href="#"> <img src="img/logo.png" class="home" alt="Logo wb7urlShortener"/></a>
 		</div>
@@ -37,7 +38,6 @@ include('inc/sql.php');
 		</form>
 	</div> 
 	<div id="boundary"></div>
-</div>
 </div>
 	<div class="hold-info">
 	<div class="inline info"> 
