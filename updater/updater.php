@@ -22,5 +22,7 @@
 					fwrite($handle, $content);
 					fclose($handle);
 				}
+			}
+		}
 	}
 ?>
