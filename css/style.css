@@ -141,7 +141,7 @@ img{
 		position: fixed;
 		padding-top: 94px;
 		width: 100%;
-  min-width:30%;
+		min-width:30%;
 		text-align: center;
 		z-index: 0;
 }
@@ -394,7 +394,7 @@ input[type="text"]:focus
 		position: fixed;
 		padding-top: 94px;
 		width: 100%;
-  min-width:30%;
+		min-width:30%;
 		text-align: center;
 		z-index: 0;
 }
@@ -649,7 +649,6 @@ input[type="text"]:focus
 /* Logo*/
 
 #logo{
-		position: absolute;
 		padding-top: 20%;
 		width: 100%;
 		min-width:30%;
@@ -808,13 +807,10 @@ input[type="text"]:focus
 
 @media (max-width: 330px) {
 
-
-
 /* /////////////////////////////////////// CSS NAV HEADER //////////////////////////////////// */
 /* /////////////////////////////////////// CSS NAV HEADER //////////////////////////////////// */
 
 #block-nav {
-		position: relative;
 		height: 20px;
 		z-index: 500;
 }
@@ -826,27 +822,20 @@ input[type="text"]:focus
 
 #menu-nav {
 		height: 35px;
-		right: 0px;
-		top: 40px;
 		text-align: center;
 }
 
 .flyout{
 		margin-top: 0px;
 		color:black;
-		padding-left: 0px;
 }
 
-.flyout li{
-		padding-left: 20px;
-}
 
 
 #block-nav li {
 		color:black;
 		margin-top: 0px;
 		list-style: none;
-		
 		font-family:"Blanchcaps",Georgia, Arial, serif;
 		font-weight: normal;
 		font-size: 1.3em;
@@ -867,7 +856,7 @@ input[type="text"]:focus
 
 
 .has-flyout{
-		margin-right: 3%;
+		margin-left: -40px;
 		text-align: center;
 		display: block;
 }
@@ -899,10 +888,15 @@ input[type="text"]:focus
 /* Logo*/
 
 #logo{
-		position: absolute;
-		padding-top: 27%;
+		padding-top: 100px;
 		text-align: center;
 		z-index: 0;
+}
+
+#logo img{
+
+	width: 100%;
+
 }
 
 /* wrapper */
@@ -1023,7 +1017,7 @@ input[type="text"]:focus
 
 .info-text {
 		margin: 0 auto;
-		width: 250px;
+		width: 100%;
 		background: #E6E6E6;
 }
 
