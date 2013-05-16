@@ -45,7 +45,7 @@ include('inc/sql.php');
 				</div>
 			</div>
 <footer>
-<a href="IMPRESSUM HERE">Impressum</a> | Proudly powered by <a href="http://urlShortener.wb7.eu">urlShortener.wb7.eu</a> | <!-- DONT REMOVE THE FOLLOWING LINK!-->Impressed by <a href="http://www.thierryli.com/">www.thierryli.com</a> - Thanks :)
+<?php If(file_exists('imprint.php')){?><a href="imprint.php">Imprint/Impressum</a> | <?php } ?>Proudly powered by <a href="http://urlShortener.wb7.eu">urlShortener.wb7.eu</a> | <!-- DONT REMOVE THE FOLLOWING LINK!-->Impressed by <a href="http://www.thierryli.com/">www.thierryli.com</a> - Thanks :)
 </footer>	
 </body>
 </html>

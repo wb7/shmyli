@@ -4,7 +4,7 @@ include('inc/sql.php');
 ?>
 <html>
 <head>
-	<title><?php $content->getString("page-title", $db);?> :: <?php $content->getString("who-title", $db);?></title>
+	<title><?php $content->getString("page-title", $db);?> :: <?php $content->getString("imprint-title", $db);?></title>
 	<link rel="stylesheet" href="css/style.css" />
 	<meta charset="utf-8">
 </head>
@@ -27,10 +27,10 @@ include('inc/sql.php');
 		</div>
 </div>
 		<div id="logo">
-			<a href="index.php"><img src="img/who.png" class="home" alt="<?php $content->getString("who-title", $db);?>"/></a>
+			<a href="index.php"><img src="img/imprint.png" class="home" alt="<?php $content->getString("imprint-title", $db);?>"/></a>
 		</div>
 <div id="headline">
-		<h1><b><?php $content->getString("who-title", $db);?></b></h1>
+		<h1><b><?php $content->getString("imprint-title", $db);?></b></h1>
 	</div> 
 	<div id="boundary"></div>
 </div>
@@ -38,7 +38,7 @@ include('inc/sql.php');
 	<div class="inline info"> 
 	<div class="info-text">
 	<p class="text">
-		<?php $content->getString("who-text", $db); ?>
+		<?php $content->getString("imprint-text", $db); ?>
 	</p>
 			</div>
 			</div>

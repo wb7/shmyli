@@ -29,12 +29,12 @@ include('inc/sql.php');
 		</div>
 </div>
 		<div id="logo">
-			<a href="#"> <img src="img/logo.png" class="home" alt="Logo wb7urlShortener"/></a>
+			<a href="#"><img src="img/logo.png" class="home" alt="Logo"/></a>
 		</div>
 <div id="container">
 		<form action="" method="post" id="form">
-			<input type="text" id="url" name="url" placeholder="Your long link here..." class="">
-			<input class="button-link" type="submit" value="Generate Link!">
+			<input type="text" id="url" name="url" placeholder="<?php $content->getString("textfield", $db);?>" class="">
+			<input class="button-link" type="submit" value="<?php $content->getString("submit-button", $db);?>">
 		</form>
 	</div> 
 	<div id="boundary"></div>
@@ -43,33 +43,21 @@ include('inc/sql.php');
 	<div class="inline info"> 
 	<div class="block-text">
 	<p class="text">
-				Lorem ipsum dolor sit amet,<br />
-				consetetur sadipscing elitr,<br />
-				sed diam nonumy eirmod tempor<br />
-				invidunt ut labore et dolore<br />
-				magna aliquyam Lorem ipsum<br />		
+				<?php $content->getString("home-1", $db);?>		
 	   </p>
 			</div>
 			</div>
 			<div class="inline info">
 			<div class="block-text">
 				<p class="text">
-					Lorem ipsum dolor sit amet,<br />
-				consetetur sadipscing elitr,<br />
-				sed diam nonumy eirmod tempor<br />
-				invidunt ut labore et dolore<br />
-				magna aliquyam Lorem ipsum<br />
+				<?php $content->getString("home-2", $db);?>		
 				</p>
 				</div>
 			</div>
 			<div  class="inline info">
 			<div class="block-text">
 				<p class="text">
-					Lorem ipsum dolor sit amet,<br />
-				consetetur sadipscing elitr,<br />
-				sed diam nonumy eirmod tempor<br />
-				invidunt ut labore et dolore<br />
-				magna aliquyam Lorem ipsum<br />
+				<?php $content->getString("home-3", $db);?>		
 					
 				</p>
 				</div>
@@ -77,7 +65,7 @@ include('inc/sql.php');
 				</div>
 			</div>
 <footer>
-<a href="IMPRESSUM HERE">Impressum</a> | Proudly powered by <a href="http://urlShortener.wb7.eu">wb7urlShortener</a> | <!-- DONT REMOVE THE FOLLOWING LINK!-->Impressed by <a href="http://www.thierryli.com/">www.thierryli.com</a> - Thanks :)
+<?php If(file_exists('imprint.php')){?><a href="imprint.php">Imprint/Impressum</a> | <?php } ?>Proudly powered by <a href="http://urlShortener.wb7.eu">wb7urlShortener</a> | <!-- DONT REMOVE THE FOLLOWING LINK!-->Impressed by <a href="http://www.thierryli.com/">www.thierryli.com</a> - Thanks :)
 </footer>	
 </body>
 </html>

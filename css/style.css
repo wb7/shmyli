@@ -249,12 +249,16 @@ input[type="text"]:focus
 
 .inline{
 	display: inline-block;
+	vertical-align: top;
 }
 
 /* Info */
 
 .info{
-		padding: 3.5%;
+		padding-right: 3.5%;
+		padding-left: 3.5%;
+		padding-top: 3.5%;
+		padding-bottom: 3.5%;
 }
 
 /* Block - Text */
@@ -262,7 +266,6 @@ input[type="text"]:focus
 .block-text {
 
 		width: 190px;
-
 }
 
 .info-text {
@@ -292,8 +295,8 @@ input[type="text"]:focus
 		font-size: 0.9em;
 		color:#000;
 		text-align: left;
-		padding: 0%;
 		line-height: 24px;
+		position: relative;
 }
 }
 
