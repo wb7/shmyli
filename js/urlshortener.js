@@ -4,10 +4,10 @@ $(document).ready(function()
         $.ajax({
             type: "POST",
             url: "url.php",
-            data: "url=" + $("#url").val(),
+            data: "check=" + $("#url").val(),
             success: function(msg)
             {
-                $("#container").hide().load("url.php?url=" + escape($("#url").val())).fadeIn(2000);
+                $("#container").hide().load("url.php?url=" + escape($("#url").val())).fadeIn(500);
             }
         });
         return false;

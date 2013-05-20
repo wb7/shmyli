@@ -1,6 +1,14 @@
 <?php
-$dbhost = "localhost";
-$dbuser = "root";
-$dbpw = "garte";
-$db = "kurzlink";
+
+	$dbhost = "localhost";
+	$dbuser = "root";
+	$dbpw = "garte";
+	$db = "kurzlink";
+
+$config = array(
+
+	"domain" => "domain.tld",
+
+);
+
 ?>
