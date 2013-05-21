@@ -46,7 +46,7 @@ If (isset($_GET['url'])){
 		
 		}
 
-		echo $config['domain'] . "/" . $temp;
+		echo "" . substr($_GET['url'], 0, 30) . "...<br /><input type=\"text\" style=\"margin-top: 1%;\" onclick=\"this.select()\" value=\"http://" . $config['domain'] . "/" . $temp . "\" readonly />";
 		
 	}
 }
