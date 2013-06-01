@@ -25,5 +25,3 @@ geht es vorwärts. Nach diversen anderen Projekten gehts dann hier weiter.
 TODO:
 
 -Texte schreiben
--Formatierung Rückgabe der URL
--Rückgabe der URL

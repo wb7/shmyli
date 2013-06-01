@@ -1,5 +1,6 @@
 <?php
 include('inc/sql.php');
+include('inc/content.class.php');
 
 function getString($length = 6)
 {
@@ -22,32 +23,39 @@ If (isset($_GET['url'])){
 
 	If (!empty($_GET['url'])){
 	
-		$temp = getString();
+		If(filter_var($_GET['url'], FILTER_VALIDATE_URL) === FALSE){
 		
-		$exists = $db->query("SELECT `short` FROM `links` WHERE `url` = '" . mysqli_real_escape_string($db, $_GET['url']) . "';");
-		
-		If ($exists->num_rows > 0){
-			
-			$array = $exists->fetch_array();
-			$temp = $array[0];
+			echo "<p class=\"invalid-url\">"; echo $content->getString("invalid-url", $db); echo "</p>";
 			
 		}else{
 		
-			$result = $db->query("SELECT * FROM `links` WHERE `short` = '" . $temp . "';");
+			$temp = getString();
+			
+			$exists = $db->query("SELECT `short` FROM `links` WHERE `url` = '" . mysqli_real_escape_string($db, $_GET['url']) . "';");
+			
+			If ($exists->num_rows > 0){
+				
+				$array = $exists->fetch_array();
+				$temp = $array[0];
+				
+			}else{
+			
+				$result = $db->query("SELECT * FROM `links` WHERE `short` = '" . $temp . "';");
 
-			while($result->num_rows > 0){
+				while($result->num_rows > 0){
 
-				$temp = getString();
-				GLOBAL $temp;
+					$temp = getString();
+					GLOBAL $temp;
 
+				}
+
+				$db->query("INSERT INTO `links` (`short`, `url`) VALUE ('" . $temp . "', '" . mysqli_real_escape_string($db, $_GET['url']) . "');");
+			
 			}
 
-			$db->query("INSERT INTO `links` (`short`, `url`) VALUE ('" . $temp . "', '" . mysqli_real_escape_string($db, $_GET['url']) . "');");
+			echo "" . substr($_GET['url'], 0, 30) . "...<br /><input type=\"text\" style=\"margin-top: 1%;\" onclick=\"this.select()\" value=\"http://" . $config['domain'] . "/" . $temp . "\" readonly />";
 		
 		}
-
-		echo "" . substr($_GET['url'], 0, 30) . "...<br /><input type=\"text\" style=\"margin-top: 1%;\" onclick=\"this.select()\" value=\"http://" . $config['domain'] . "/" . $temp . "\" readonly />";
-		
 	}
 }
 ?>

@@ -44,6 +44,14 @@ img{
 		border: none; /*For IE*/
 }
 
+
+#container > .invalid-url{
+
+		font-size: 1em;
+		font-family: Verdana;
+
+}
+
 /*Browser*/
 @media (min-width: 950px) {
 /* /////////////////////////////////////// CSS NAV HEADER //////////////////////////////////// */
