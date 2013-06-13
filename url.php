@@ -23,7 +23,10 @@ If (isset($_GET['url'])){
 
 	If (!empty($_GET['url'])){
 	
-		If(filter_var($_GET['url'], FILTER_VALIDATE_URL) === FALSE){
+		$regex = "~^(http|ftp)(s)?\:\/\/((([a-z|0-9|\-]{1,25})(\.)?){2,7})($|/.*$)~i";
+
+
+		If (!preg_match($regex, $_GET['url'])) {
 		
 			echo "<p class=\"invalid-url\">"; echo $content->getString("invalid-url", $db); echo "</p>";
 			

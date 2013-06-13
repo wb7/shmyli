@@ -25,3 +25,5 @@ geht es vorwärts. Nach diversen anderen Projekten gehts dann hier weiter.
 TODO:
 
 -Texte schreiben
+-Zurueck-Button nach generiertem Link
+-besseres JS bei Generierung des Links

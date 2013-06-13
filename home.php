@@ -29,7 +29,7 @@ include('inc/sql.php');
 		</div>
 </div>
 		<div id="logo">
-			<a href="#"><img src="img/logo.png" class="home" alt="Logo"/></a>
+			<a href="index.php"><img src="img/logo.png" class="home" alt="Logo"/></a>
 		</div>
 <div id="container">
 		<form action="" method="post" id="form">
