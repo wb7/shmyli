@@ -24,7 +24,7 @@ If ($_POST['host'] AND $_POST['user'] AND $_POST['password'] AND $_POST['databas
 
 			$db->query("INSERT INTO `content` (`id`, `keyword`, `content`) VALUES
 			(3, '404-text', 'Error 404 - not found! :('),
-			(1, 'page-title', 'urlShortener'),
+			(1, 'page-title', 'shmyli'),
 			(2, '404-title', '404 - Not found :/'),
 			(4, 'what-title', 'What!?'),
 			(5, 'what-text', 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.'),
