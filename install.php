@@ -8,7 +8,7 @@ If ($_POST['host'] AND $_POST['user'] AND $_POST['password'] AND $_POST['databas
 			unlink("inc/conf.inc.php");
 		}
 		$file = fopen("inc/conf.inc.php", "a");
-		fwrite($file, "<?php\n\$dbhost = \"" . $_POST['host'] . "\";\r\n\$dbuser = \"" . $_POST['user'] . "\";\r\n\$dbpw = \"" . $_POST['password'] . "\";\r\n\$db = \"" . $_POST['database'] . "\";\n?>");
+		fwrite($file, "<?php\n\$dbhost = \"" . $_POST['host'] . "\";\r\n\$dbuser = \"" . $_POST['user'] . "\";\r\n\$dbpw = \"" . $_POST['password'] . "\";\r\n\$db = \"" . $_POST['database'] . "\";\r\n\r\n\$config = array(\r\n\t\"domain\" => \"" . $_POST['domain'] . "\",\r\n);\r\n?>");
 		fclose($file);
 	
 	//QUERY
@@ -59,5 +59,6 @@ If ($_POST['host'] AND $_POST['user'] AND $_POST['password'] AND $_POST['databas
 	<input type="text" name="user" placeholder="User"><br />
 	<input type="password" name="password" placeholder="Password"><br />
 	<input type="text" name="database" placeholder="Database"><br />
+	<input type="text" name="domain" placeholder="Domain"><br />
 	<input type="submit">
 </form>
