@@ -50,7 +50,7 @@ If ($_POST['host'] AND $_POST['user'] AND $_POST['password'] AND $_POST['databas
 
 			$db->query("INSERT INTO `links` (`id`, `short`, `url`) VALUES (1, 'wb7.eu', 'http://wb7.eu');");
 		
-}
+}			header("Location: index.php");
 
 ?>
 
