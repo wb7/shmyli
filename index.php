@@ -1,5 +1,6 @@
 <?php
 
+If (!file_exists('installation')){
 	If(isset($_GET['short'])){
 		If ($_GET['short'] != ""){
 
@@ -22,5 +23,5 @@
 			
 		}else{include('home.php');}
 	}else{include('home.php');}
-
+}else{header("Location: install.php");}
 ?>
