@@ -1,0 +1,13 @@
+<?php
+/*
+If you want to upgrade SHortMYLInk, simply call this script. But rename it to "update.php" a minute before the next
+update ;)
+*/
+
+	include('./updater/updater.php'); //Include updater
+	checkUpdates(); //Load update and extract it
+	unlink("update.zip"); //remove update
+	chmod("inc/conf.inc.php", 0400); //set config to 400
+	rename("update.php", "update.txt"); //rename this script
+	
+?>

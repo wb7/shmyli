@@ -1,28 +1,61 @@
 <?php
 
-	function checkUpdates($package, $mirror="files.lg-server.de"){
+	function checkUpdates($mirror = "http://dl.shmy.li/files/"){
 	
 		//Get file
 	
-			If($handle = ftp_connect($mirror)){
-			ftp_login($handle, "files", "files");
-			ftp_get($handle, $package . "_update.zip", "update.zip", FTP_BINARY);}else{echo "Error! Please report this bug on bugs.lg-server.de!";}
-	
-		//Unzip
-	
-		if(is_file($package . "_update.zip")){
-			$zip = zip_open($package . "_update.zip");
-			while($read = zip_read($zip)){
-				$content = zip_entry_read($read);
-				$name = zip_entry_name($read);
-				$path = dirname($name);
-				if(!is_dir($path)){
-					mkdir($path);
-					$handle = fopen($name, "w+");
-					fwrite($handle, $content);
-					fclose($handle);
-				}
+			If(file_exists("update.zip")){
+				unlink("update.zip");
 			}
-		}
+			$handle = fopen("update.zip", "w");
+			$content = file_get_contents($mirror . "update.zip");
+			fwrite($handle, $content);
+			
+			unzip("update.zip");
+			
 	}
+	
+	//Based on http://de2.php.net/manual/de/ref.zip.php#75079		
+	function unzip($src_file) 
+	{
+	  if ($zip = zip_open($src_file)) 
+	  {
+		if ($zip) 
+		{
+		  // For every file in the zip-packet
+		  while ($zip_entry = zip_read($zip)) 
+		  {
+			// Open the entry
+			if (zip_entry_open($zip,$zip_entry,"r")) 
+			{
+			  
+			  // The name of the file to save on the disk
+			  $file_name = zip_entry_name($zip_entry);
+			  // Get the content of the zip entry
+			  $fstream = zip_entry_read($zip_entry, zip_entry_filesize($zip_entry));
+				If (substr($file_name, -1, 1) != "/"){
+					file_put_contents($file_name, $fstream );
+					echo "save: ".$file_name."<br />";
+				}else{
+					If(!file_exists($file_name)){
+						mkdir($file_name);
+						echo "save: ".$file_name."<br />";
+					}
+				}
+			  
+			  // Close the entry
+			  zip_entry_close($zip_entry);
+			}       
+		  }
+		  // Close the zip-file
+		  zip_close($zip);
+		}
+	  } 
+	  else
+	  {
+		return false;
+	  }
+	  return true;
+	}
+
 ?>
