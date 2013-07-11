@@ -1,0 +1,6 @@
+UPGRADE
+
+If there is a new version, you should upgrade shmyli.
+Upgrading is really simple: rename "updater.txt" to
+"updater.php" and call "YOURDOMAIN/updater.php" to
+upgrade shmyli to the newest version.
