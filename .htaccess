@@ -4,11 +4,23 @@
 #You need an Apache-Webserver and mod_rewrite, otherwise
 #you will get an error!
 
+
+###########################################
+#Remove the "#" before the next lines, if
+#you are not in development!
+###########################################
+
+
 #RewriteEngine On
 #RewriteBase /
 #RewriteCond %{REQUEST_URI} !=/index.php
 #RewriteRule ^(.*) /index.php?short=$1 [L,PT]
 
+
+###########################################
+#FOR SECURITY REASONS: CHANGE NOTHING AFTER
+#THIS LINE!
+###########################################
 <Files 404.php>
 deny from all
 </Files>
