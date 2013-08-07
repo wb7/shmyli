@@ -8,7 +8,7 @@
 $config = array(
 
 	"domain" => "domain.tld",
-
+	"navigation" => "yes",
 );
 
 ?>
