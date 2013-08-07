@@ -5,7 +5,7 @@ If ($_POST['host'] AND $_POST['user'] AND $_POST['password'] AND $_POST['databas
 	//WRITE
 	
 		$file = fopen("inc/conf.inc.php", "w");
-		fwrite($file, "<?php\n\$dbhost = \"" . $_POST['host'] . "\";\r\n\$dbuser = \"" . $_POST['user'] . "\";\r\n\$dbpw = \"" . $_POST['password'] . "\";\r\n\$db = \"" . $_POST['database'] . "\";\r\n\r\n\$config = array(\r\n\t\"domain\" => \"" . $_POST['domain'] . "\",\r\n\"navigation\" => \"yes\",\r\n);\r\n?>");
+		fwrite($file, "<?php\n\$dbhost = \"" . $_POST['host'] . "\";\r\n\$dbuser = \"" . $_POST['user'] . "\";\r\n\$dbpw = \"" . $_POST['password'] . "\";\r\n\$database = \"" . $_POST['database'] . "\";\r\n\r\n\$config = array(\r\n\t\"domain\" => \"" . $_POST['domain'] . "\",\r\n\"navigation\" => \"yes\",\r\n);\r\n?>");
 		fclose($file);
 	
 	//QUERY

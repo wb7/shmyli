@@ -3,7 +3,7 @@
 	$dbhost = "localhost";
 	$dbuser = "root";
 	$dbpw = "garte";
-	$db = "kurzlink";
+	$database = "kurzlink";
 
 $config = array(
 
