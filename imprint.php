@@ -1,6 +1,7 @@
 <?php
 include('inc/content.class.php');
 include('inc/sql.php');
+include('inc/conf.inc.php');
 ?>
 <html>
 <head>
@@ -17,11 +18,21 @@ include('inc/sql.php');
 			<ul id="menu-nav">
 				<li class="has-flyout">
 					<a href="index.php"><img src="img/grid-menu.png"></a>
+					
+					<?php
+					If ($config['navigation'] == "yes"){
+					?>
+
 					<ul class="flyout">
 						<li><a href="what.php"><?php $content->getString("what-title", $db);?></a></li>
 						<li><a href="who.php"><?php $content->getString("who-title", $db);?></a></li>
 						<li><a href="why.php"><?php $content->getString("why-title", $db);?></a></li>
 					</ul>
+
+					<?php
+					}
+					?>
+
 				</li>
 			</ul>
 		</div>
