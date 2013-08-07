@@ -4,10 +4,7 @@ If ($_POST['host'] AND $_POST['user'] AND $_POST['password'] AND $_POST['databas
 
 	//WRITE
 	
-		If (file_exists("inc/conf.inc.php")){
-			unlink("inc/conf.inc.php");
-		}
-		$file = fopen("inc/conf.inc.php", "a");
+		$file = fopen("inc/conf.inc.php", "w");
 		fwrite($file, "<?php\n\$dbhost = \"" . $_POST['host'] . "\";\r\n\$dbuser = \"" . $_POST['user'] . "\";\r\n\$dbpw = \"" . $_POST['password'] . "\";\r\n\$db = \"" . $_POST['database'] . "\";\r\n\r\n\$config = array(\r\n\t\"domain\" => \"" . $_POST['domain'] . "\",\r\n);\r\n?>");
 		fclose($file);
 	
@@ -50,10 +47,12 @@ If ($_POST['host'] AND $_POST['user'] AND $_POST['password'] AND $_POST['databas
 
 			$db->query("INSERT INTO `links` (`id`, `short`, `url`) VALUES (1, 'wb7.eu', 'http://wb7.eu');");
 			unlink("installation");
-}			header("Location: index.php");
+			header("Location: index.php");
+}
 
 ?>
 
+<h1>Database and domain where shmyli should be reachable</h1>
 <form action="" method="post">
 	<input type="text" name="host" placeholder="Host"><br />
 	<input type="text" name="user" placeholder="User"><br />
