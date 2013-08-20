@@ -18,12 +18,6 @@ class content{
 	
 	}
 
-	public function install($lang){
-		
-		//If (file_exists())	
-		
-	}
-
 }
 
 $content = new content;
