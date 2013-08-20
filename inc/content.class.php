@@ -28,6 +28,4 @@ class content{
 
 $content = new content;
 
-echo dirname(__FILE__);
-
 ?>
