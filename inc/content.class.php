@@ -18,8 +18,16 @@ class content{
 	
 	}
 
+	public function install($lang){
+		
+		//If (file_exists())	
+		
+	}
+
 }
 
 $content = new content;
+
+echo dirname(__FILE__);
 
 ?>

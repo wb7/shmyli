@@ -18,9 +18,9 @@ include('inc/sql.php');
 				<li class="has-flyout">
 					<a href="index.php"><img src="img/grid-menu.png"></a>
 					<ul class="flyout">
-						<li><a href="what.php">What?</a></li>
-						<li><a href="who.php">Who?</a></li>
-						<li><a href="why.php">Why?</a></li>
+						<li><a href="what.php"><?php $content->getString("what-title", $db);?></a></li>
+						<li><a href="who.php"><?php $content->getString("who-title", $db);?></a></li>
+						<li><a href="why.php"><?php $content->getString("why-title", $db);?></a></li>
 					</ul>
 				</li>
 			</ul>
@@ -45,7 +45,7 @@ include('inc/sql.php');
 				</div>
 			</div>
 <footer>
-<?php If(file_exists('imprint.php')){?><a href="imprint.php">Imprint/Impressum</a> | <?php } ?>Proudly powered by <a href="http://shmy.li">SHortMYLInk</a> | <!-- DONT REMOVE THE FOLLOWING LINK!-->Impressed by <a href="http://www.thierryli.com/">www.thierryli.com</a> - Thanks :)
+<?php If(file_exists('imprint.php')){?><a href="imprint.php"><?php $content->getString("imprint-title", $db);?></a> | <?php } ?>Proudly powered by <a href="http://shmy.li">SHortMYLInk</a> | <!-- DONT REMOVE THE FOLLOWING LINK!-->Impressed by <a href="http://www.thierryli.com/">www.thierryli.com</a> - Thanks :)
 </footer>	
 </body>
 </html>

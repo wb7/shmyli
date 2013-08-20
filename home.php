@@ -75,7 +75,7 @@ include('inc/conf.inc.php');
 				</div>
 			</div>
 <footer>
-<?php If(file_exists('imprint.php')){?><a href="imprint.php">Imprint/Impressum</a> | <?php } ?>Proudly powered by <a href="http://shmy.li">SHortMYLInk</a> | <!-- DONT REMOVE THE FOLLOWING LINK!-->Impressed by <a href="http://www.thierryli.com/">www.thierryli.com</a> - Thanks :)
+<?php If(file_exists('imprint.php')){?><a href="imprint.php"><?php $content->getString("imprint-title", $db);?></a> | <?php } ?>Proudly powered by <a href="http://shmy.li">SHortMYLInk</a> | <!-- DONT REMOVE THE FOLLOWING LINK!-->Impressed by <a href="http://www.thierryli.com/">www.thierryli.com</a> - Thanks :)
 </footer>	
 </body>
 </html>

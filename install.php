@@ -1,6 +1,6 @@
 <?php
 error_reporting(0);
-If ($_POST['host'] AND $_POST['user'] AND $_POST['password'] AND $_POST['database']){
+If ($_POST['host'] AND $_POST['user'] AND $_POST['database']){
 
 	//WRITE
 	
