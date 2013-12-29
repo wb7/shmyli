@@ -34,7 +34,7 @@ If (isset($_GET['url'])){
 		
 			$temp = getString();
 			
-			$exists = $db->query("SELECT `short` FROM `links` WHERE `url` = '" . mysqli_real_escape_string($db, $_GET['url']) . "';");
+			$exists = $db->query("SELECT `short` FROM `shmyli_links` WHERE `url` = '" . mysqli_real_escape_string($db, $_GET['url']) . "';");
 			
 			If ($exists->num_rows > 0){
 				
@@ -43,7 +43,7 @@ If (isset($_GET['url'])){
 				
 			}else{
 			
-				$result = $db->query("SELECT * FROM `links` WHERE `short` = '" . $temp . "';");
+				$result = $db->query("SELECT * FROM `shmyli_links` WHERE `short` = '" . $temp . "';");
 
 				while($result->num_rows > 0){
 
@@ -52,7 +52,7 @@ If (isset($_GET['url'])){
 
 				}
 
-				$db->query("INSERT INTO `links` (`short`, `url`) VALUE ('" . $temp . "', '" . mysqli_real_escape_string($db, $_GET['url']) . "');");
+				$db->query("INSERT INTO `shmyli_links` (`short`, `url`) VALUE ('" . $temp . "', '" . mysqli_real_escape_string($db, $_GET['url']) . "');");
 			
 			}
 

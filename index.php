@@ -6,7 +6,7 @@ If (!file_exists('installation')){
 
 			include('inc/sql.php');
 		
-			$result = $db->query("SELECT * FROM `links` WHERE `short` = '" . mysqli_real_escape_string($db, $_GET['short']) . "';");
+			$result = $db->query("SELECT * FROM `shmyli_links` WHERE `short` = '" . mysqli_real_escape_string($db, $_GET['short']) . "';");
 			
 			If ($result->num_rows > 0){
 			

@@ -12,14 +12,14 @@ If ($_POST['host'] AND $_POST['user'] AND $_POST['database']){
 	
 		include('inc/sql.php');
 		
-			$db->query("CREATE TABLE IF NOT EXISTS `content` (
+			$db->query("CREATE TABLE IF NOT EXISTS `shmyli_content` (
 			  `id` int(11) NOT NULL AUTO_INCREMENT,
 			  `keyword` varchar(255) NOT NULL,
 			  `content` text NOT NULL,
 			  PRIMARY KEY (`id`)
 			) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=18 ;");
 
-			$db->query("INSERT INTO `content` (`id`, `keyword`, `content`) VALUES
+			$db->query("INSERT INTO `shmyli_content` (`id`, `keyword`, `content`) VALUES
 			(3, '404-text', 'Error 404 - not found! :('),
 			(1, 'page-title', 'shmyli'),
 			(2, '404-title', '404 - Not found :/'),
@@ -38,14 +38,14 @@ If ($_POST['host'] AND $_POST['user'] AND $_POST['database']){
 			(14, 'home-3', 'Lorem ipsum dolor sit amet,<br />\nconsetetur sadipscing elitr,<br />\nsed diam nonumy eirmod tempor<br />\ninvidunt ut labore et dolore<br />\nmagna aliquyam Lorem ipsum'),
 			(17, 'invalid-url', 'Oops...this URL was not valid.');");
 
-			$db->query("CREATE TABLE IF NOT EXISTS `links` (
+			$db->query("CREATE TABLE IF NOT EXISTS `shmyli_links` (
 			  `id` int(11) NOT NULL AUTO_INCREMENT,
 			  `short` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
 			  `url` text COLLATE utf8_unicode_ci NOT NULL,
 			  PRIMARY KEY (`id`)
 			) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=2 ;");
 
-			$db->query("INSERT INTO `links` (`id`, `short`, `url`) VALUES (1, 'wb7', 'http://wb7.eu');");
+			$db->query("INSERT INTO `shmyli_links` (`id`, `short`, `url`) VALUES (1, 'wb7', 'http://wb7.eu');");
 			unlink("installation");
 			header("Location: index.php");
 }
