@@ -1,5 +1,12 @@
 NOTE: PLEASE DO NOT REMOVE THE FILE "installation"!
-THIS WILL DONE AUTOMATICALLY!
+THIS WILL BE DONE AUTOMATICALLY!
+
+Currently shmyli can only be used on an apache webserver
+with mod_rewrite. In case you don't know what this is,
+please ask your provider if he has mod_rewrite.
+
+We are working on support for nginx and lighttpd,
+IIS isn't possible yet - we don't own such a license.
 
 Install shmyli is easy: copy the files to your server,
 create a MySQL database and run install.php.
