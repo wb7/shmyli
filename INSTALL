@@ -12,4 +12,6 @@ Install shmyli is easy: copy the files to your server,
 create a MySQL database and run install.php.
 After that you have to rename htaccess.txt to .htaccess.
 
+REMOVE install.php WHEN FINISHED!
+
 Done.
